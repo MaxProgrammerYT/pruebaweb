@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>GRAFITO CHAMA</title>
+        <link rel="icon" type="image/svg+xml" href="img-graf/GC.png" />
+        <link rel="stylesheet" href="cont/numr.css">
+        <link rel="stylesheet" href="index.html"> 
+        <link rel="stylesheet" href="nosotros.html"> 
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+
+        <!-- Bootstrap CSS v5.2.1 -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
+    </head>
+
+    <style>
+        body {
+           /* background-color: #F4F6F6 ; */
+            background-color: #fff ; 
+        }
+    </style>
+
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
+                <div class="container">
+                    <a class="navbar-brand" href="#">
+                        <img src="img-graf/GC.png" alt="Logo"> 
+                        Grafito Chama
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav ms-auto">
+                            <a class="nav-item nav-link" href="inicio.html">INICIO</a>
+                            <a class="nav-item nav-link" href="index.html">CATEGORIAS</a>
+                            <a class="nav-item nav-link" href="nosotros.html">NOSOTROS</a>
+                            <a class="nav-item nav-link" href="contacto.html">CONTACTO</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <br> <br> <br>
+
+        <section class="container"><br>
+            <div class="row">
+                <div class="col-md-2">
+                    <div class="logo">
+                        <img src="img-graf/llamada.gif" alt="Logo de Grafito Chama">
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="descripcion">
+                        <h2 style="font-size: 1.5rem; font-weight: normal; color: #333;">¡Escríbenos, en Grafito Chama estamos para ayudarte!</h2>
+                        <p style="font-size: 0.9rem; font-weight: normal; color: #555;">Estamos comprometidos en brindarte la mejor atención y soluciones a tus necesidades. Contáctanos para más información.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-2">
+                    <div class="contacto-title">Facebook</div>
+                    <div class="social-icons" style="display: inline-block; vertical-align: middle;">
+                        <span class="facebook">
+                            <a href="https://www.facebook.com/profile.php?id=100087400663878" target="_blank">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            
+            <form action="" class="form" id="form" autocomplete="off">
+                <p class="form-titulo">Escríbenos</p>
+                <div class="row">
+                    <div class="col">
+                        <div class="form-input myname">
+                            <input type="text" id="myname" placeholder="Nombre">
+                            <p class="mensajeError"></p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-input surname">
+                            <input type="text" id="surname" placeholder="Apellidos">
+                            <p class="mensajeError"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-input email">
+                    <input type="email" id="email" placeholder="Correo electrónico">
+                    <p class="mensajeError"></p>
+                </div>
+                <div class="form-input address">
+                    <input type="text" id="address" placeholder="Dirección">
+                    <p class="mensajeError"></p>
+                </div>
+                <div class="form-input mobile">
+                    <input type="text" id="mobile" placeholder="Número de teléfono">
+                    <p class="mensajeError"></p>
+                </div>
+                <p>
+                    <span class="wpcf7-form-control-wrap" data-name="menu-452">
+                        <span class="menu-trigger">Mostrar Opciones <i class="fas fa-caret-right"></i></span>
+                        <ul class="menu-options">
+                            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+                            <li>WhatsApp Grafito Chama</li>
+                        </ul>
+                    </span>
+                </p>
+                <p id="opcionSeleccionada"></p>
+                <div class="form-termsAndConditions termsAndConditions">
+                    <input type="checkbox" id="termsAndConditions">
+                    <label for="termsAndConditions">He leído y acepto los </label>
+                    <a href="#">Términos y Condiciones </a>
+                    <p class="mensajeError"></p>
+                </div>
+                <br>
+                <div class="form-boton">
+                    <input type="submit" value="Enviar" id="enviarFormulario">
+                </div>
+                <p class="mensajeCorrecto"></p>
+            </form>
+        </section>
+
+
+        <footer class="footer">
+            <div class="container container-footer">
+                <div class="menu-footer">
+                    <div class="contact-info">
+                        <p class="title-footer">Información de Contacto</p>
+                        <ul class="contact-info">
+                            <li class="service-name">A TU SERVICIO</li>
+                            <li class="whatsapp-info">
+                                <span class="whatsapp-icon">WhatsApp</span>
+                                <span class="whatsapp-number">+51 937599814</span>
+                            </li>
+                            <li class="address">Correo electronico: alonsitoploop10@gmail.com</li>
+                            <li class="address">Dirección: Ate, Peru, 15491</li>
+                        </ul>
+                        <div class="social-icons">
+                            <span class="facebook">
+                                <a href="https://www.facebook.com/profile.php?id=100087400663878" target="_blank">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                            </span>                            
+                        </div>
+                    </div>
+                    <div class="information">
+                        <p class="title-footer">Información</p>
+                        <ul>
+                            <li><a href="index.html"<!--target="_blank-->">Nuestros productos</a></li>
+                            <li><a href="#">Acerca de Nosotros</a></li>
+                            <li><a href="#">Contactános</a></li>
+                        </ul>
+                    </div>
+                    <div class="my-account">
+                        <p class="title-footer">Mi cuenta</p>
+                        <ul>                             
+                            <li><a href="#">Historial de ordenes</a></li>
+                            <li><a href="#">Nuestras categorias</a></li>
+                            <li><a href="#">Electronica</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="my-account">
+                        <p class="title-footer">Nuestra empresa</p>
+                        <ul>
+                            <li><a href="#">Historial de ordenes</a></li>
+                            <li><a href="#">Lista de deseos</a></li>
+                            <li><a href="#">Boletín</a></li>
+                            <li><a href="#">Reembolsos</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright-container">
+                <hr>
+                <div class="copyright">
+                    <p>&copy;  TODOS LOS DERECHOS RESERVADOS</p>
+                    <p>  2024 Grafito Chama de la mano con las empresas</p>
+                </div>
+            </div>
+        </footer>
+        
+
+
+
+
+
+        <script src="https://kit.fontawesome.com/81581fb069.js" crossorigin="anonymous"></script>
+        <!-- Bootstrap JavaScript Libraries -->
+        <script src="cont/numr.js"></script>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"
+        ></script>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>

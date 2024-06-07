@@ -1,0 +1,622 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ffffff;
+    color: #343a40;
+}
+
+h1 {
+    font-size: 3.5em;
+}
+
+h2 {
+    font-size: 2.7em;
+}
+
+h3 {
+    font-size: 2em;
+}
+
+h4 {
+    font-size: 3em;
+}
+
+p {
+    font-size: 1.5em;
+}
+
+button {
+    font-size: 1.25em;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 5px;
+    border: 2px solid black;
+    box-shadow: 2px 2px 10px black;
+    color: white;
+    background-color: rgb(231, 8, 8);
+}
+
+button:hover {
+    background-color: rgb(177, 3, 3);
+}
+
+.container {
+    max-width: 1400px;
+    margin: auto;
+    background-position: 0%;
+}
+
+.color-acento {
+    color: blueviolet;
+}
+
+header {
+    background-color: #0c0c0c;
+    padding: 1rem 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+    margin-right: 0.5rem;
+}
+
+.logo span {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    padding-left: 0;
+}
+
+nav ul li {
+    margin: 0 1rem;
+    position: relative;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #f30a0a;
+}
+
+/* Dropdown */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+.dropdown-content li {
+    margin: 0;
+}
+
+.dropdown-content li a {
+    padding: 12px 16px;
+    display: block;
+    color: #343a40;
+}
+
+.dropdown-content li a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+
+/*  para el carrusel ---------------------------------------------------------------***/
+.carousel-control-prev,
+.carousel-control-next {
+  background-color: transparent; /* Fondo transparente para los botones */
+  border: none; 
+}
+
+/* para las flechas */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  color: black; 
+  font-size: 30px; 
+}
+
+/* Color de fondo al pasar el mouse */
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  background-color: rgba(0, 0, 0, 0.1); 
+}
+
+/* Eliminar los bordes de los botones */
+.carousel-control-prev:focus,
+.carousel-control-next:focus {
+  outline: none; 
+  box-shadow: none; 
+}
+
+/*  para imágenes responsivas */
+.carousel-image {
+ /* max-height: 900px;  Altura máxima de las imágenes */
+  object-fit: cover; /* para cubrir el contenedor */
+}
+
+/* para diferentes dispositivos móviles */
+@media (max-width: 547px) {
+  .carousel-control-prev,
+  .carousel-control-next {
+    font-size: 20px; 
+  }
+}
+
+ /* para iPhone */
+@media (max-width: 375px) {
+  .carousel-control-prev,
+  .carousel-control-next {
+    font-size: 18px; 
+  }
+}
+
+ /* Estilos para samsung*/
+@media (max-width: 428px) {
+  .carousel-control-prev,
+  .carousel-control-next {
+    font-size: 24px; 
+  }
+}
+
+ /* Estilos para iPade */
+@media (max-width: 768px) {
+  .carousel-control-prev,
+  .carousel-control-next {
+    font-size: 28px; 
+  }
+}
+/*----------------------------------------------------------------------------------------**-*/
+
+
+
+#algo-de-mi .container {
+    text-align: center;
+    height: 100vh;
+    padding: 200px 12px;
+}
+
+#ubi .container {
+    font-style: italic;
+    color: black;
+    text-align: center;
+    padding: 40px 12px;
+    height: 70vh;
+}
+
+#final {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    color: white;
+    height: 20vh;
+    font-size: 4em;
+    text-align: center;
+}
+
+#final a {
+    padding: 20px;
+    color: #0c0c0c;
+}
+
+#final a:hover {
+    color: rgb(231, 8, 8);
+}
+
+footer {
+    background-color: #0c0c0c;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    font-size: 15px;
+    margin-bottom: 0;
+    color: white;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    nav ul li {
+        margin: 0.5rem 0;
+    }
+
+    #hero h1 {
+        font-size: 2.5em;
+    }
+
+    #hero button {
+        font-size: 1.25em;
+    }
+
+    #algo-de-mi .container {
+        padding: 100px 12px;
+        height: auto;
+    }
+
+    #algo-de-mi .texto {
+        width: 100%;
+        max-width: 100%;
+        text-align: center;
+        padding: 0;
+    }
+
+    #algo-de-mi .img-container {
+        height: 200px;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    #final {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+        font-size: 2em;
+    }
+}
+
+@media (min-width: 800px) {
+    header {
+        position: fixed;
+        width: 100%;
+    }
+
+    header .container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav {
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+    #hero h1 {
+        font-size: 5em;
+    }
+
+    #algo-de-mi .container {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #algo-de-mi .texto {
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #algo-de-mi h2 {
+        margin-top: 0px;
+    }
+
+    #algo-de-mi .img-container {
+        background-image: url("img-graf/carbon.jpg");
+        background-size: cover;
+        background-position: center center;
+        height: 300px;
+        width: 400px;
+    }
+}
+
+
+
+
+/*para la barra de navegacion----------------------------------------------------------------*/
+.navbar-custom {
+    background-color: black;
+    height: 80px;
+    box-shadow: 0 7px 8px -3px grey;
+}
+
+.navbar-custom .navbar-brand,
+.navbar-custom .nav-link {
+    color: white !important;
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar-custom .navbar-brand {
+    font-size: 1.4rem; /* Tamaño de la fuente del texto "Grafito Chama" */
+}
+
+.navbar-custom .navbar-toggler-icon {
+    filter: invert(1);
+    /* Hace que el icono del toggle sea blanco */
+}
+
+.navbar-custom .navbar-nav .nav-item {
+    display: flex;
+    align-items: center;
+    /* Alinea verticalmente los elementos */
+}
+
+.navbar-custom .nav-link:hover {
+    color: rgb(172, 6, 6) !important;
+    /* Color rojo al pasar el mouse */
+}
+
+.navbar-custom .navbar-brand img {
+    height: 40px;
+    /* Altura de la imagen */
+    margin-right: 10px;
+    /* Espacio entre la imagen y el texto */
+}
+
+.content {
+    margin-top: 100px;
+    /* Espacio para evitar que el contenido se solape con la barra de navegación */
+}
+
+@media (max-width: 991.98px) {
+    .navbar-custom .navbar-collapse {
+        background-color: black;
+        width: 100vw;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        z-index: 1000;
+    }
+}
+
+
+
+/*para el pie del apagina web*/
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .footer {
+    background-color: #1C2833;
+    color: #fff;
+    padding: 20px 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .container-footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;  
+    margin: 0 auto;  
+    padding: 0 20px;  
+  }
+  
+  .menu-footer {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  
+  .contact-info, .information, .my-account {
+    flex: 1 1 200px;
+    margin: 10px;
+  }
+  
+  .title-footer {
+    font-size: 1.3em;
+    margin-bottom: 10px;
+  }
+  
+  .contact-info ul, .information ul, .my-account ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .contact-info li, .information li, .my-account li {
+    margin-bottom: 10px;
+  }
+  
+  /* Estilo para los enlaces */
+  .information a,
+  .my-account a {
+      color: #ffffff; 
+      text-decoration: none; /* Eliminar subrayado */
+      transition: color 0.3s ease; 
+      font-size: 14px; 
+  }
+  
+  /* Cambiar color al pasar el mouse */
+  .information a:hover,
+  .my-account a:hover {
+      color: #5aa3e8; 
+  }
+  
+  /* Estilo para animar elementos al pasar el mouse */
+  .information:hover a,
+  .my-account:hover a {
+      transform: scale(1.05); 
+  }
+  
+  /* Estilo para el texto de título */
+  .title-footer {
+      font-size: 16px; 
+      font-weight: bold; /* Texto en negrita */
+      margin-bottom: 8px; 
+  }
+  
+  /* Estilo para la lista de elementos */
+  .information ul,
+  .my-account ul {
+      list-style: none; /* Eliminar viñetas */
+      padding-left: 0; /* Eliminar espacio izquierdo */
+  }
+  
+  /* Estilo para los elementos de la lista */
+  .information li,
+  .my-account li {
+      margin-bottom: 5px; /* Espacio inferior */
+  }
+  
+  @media screen and (max-width: 768px) {
+    .information a,
+    .my-account a {
+        font-size: 12px; 
+    }
+  
+    .title-footer {
+        font-size: 14px; 
+    }
+  }
+  
+  /*************************************************************************************************************/
+  /* Estilos base de los iconos de facebok y otras redes*/
+  .social-icons {
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .social-icons span {
+    border-radius: 50%;
+    width: 3rem; /* Tamaño base de los iconos */
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Añadida la transición para el color */
+  }
+  
+  .social-icons span i {
+    font-size: 1.2rem;
+    transition: color 0.3s ease; /* Añadida la transición para el color del ícono */
+  }
+  
+  /* Estilos para el icono de Facebook */
+  .facebook {
+    background-color: #3b5998;
+  }
+  
+  .facebook:hover span {
+    background-color: #4a69ad; /* Cambia de color al pasar el mouse sobre el fondo */
+  }
+  
+  .facebook:hover span i {
+    color: #fff; 
+    animation: spin 1s linear infinite; 
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  /* Estilos para dispositivos móviles */
+  @media only screen and (max-width: 767px) {
+    .menu-footer {
+        grid-template-columns: 1fr; 
+    }
+  
+    .social-icons {
+        justify-content: center; 
+    }
+  
+    .social-icons span {
+        width: 2.5rem; 
+        height: 2.5rem;
+    }
+  
+    .social-icons span i {
+        font-size: 1rem; 
+    }
+  }
+  
+  /*************************************************************************************************************/
+  
+  .copyright-container {
+    max-width: 1200px;  
+    margin: 0 auto;  
+    padding: 0 20px;  
+  }
+  
+  .copyright {
+    text-align: left;
+    padding: 10px 0;
+  }
+  
+  .copyright hr {
+    border: 0;
+    border-top: 1px solid #fff;
+    margin: 20px 0;
+  }
+  
+  /* Estilos responsivos */
+  @media (max-width: 768px) {
+    .container-footer {
+        flex-direction: column;
+        align-items: center;
+    }
+  
+    .menu-footer {
+        flex-direction: column;
+        align-items: center;
+    }
+  
+    .contact-info, .information, .my-account {
+        margin: 10px 0;
+        width: 100%;
+        text-align: center;
+    }
+  
+    .copyright-container {
+        text-align: center;
+    }
+  
+    .copyright {
+        text-align: center;
+    }
+  }
+  

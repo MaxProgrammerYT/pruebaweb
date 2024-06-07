@@ -1,0 +1,421 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+/*para la barra de navegacion*/
+.navbar-custom {
+    background-color: black;
+    height: 80px;
+    box-shadow: 0 7px 8px -3px grey;
+}
+
+.navbar-custom .navbar-brand,
+.navbar-custom .nav-link {
+    color: white !important;
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar-custom .navbar-brand {
+    font-size: 1.4rem; /* Tamaño de la fuente del texto "Grafito Chama" */
+}
+
+.navbar-custom .navbar-toggler-icon {
+    filter: invert(1);
+    /* Hace que el icono del toggle sea blanco */
+}
+
+.navbar-custom .navbar-nav .nav-item {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-custom .nav-link:hover {
+    color: rgb(172, 6, 6) !important;
+}
+
+.navbar-custom .navbar-brand img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.content {
+    margin-top: 100px;
+}
+
+@media (max-width: 991.98px) {
+    .navbar-custom .navbar-collapse {
+        background-color: black;
+        width: 100vw;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        z-index: 1000;
+    }
+}
+/********************************************************************/
+
+ /* ---- FORMULARIO ------------------------- */
+
+.container {
+    max-width: 90%;
+    margin: auto;
+    margin-top: 20px;
+  }
+  
+  /* Estilo general del formulario */
+  .form {
+    border-top: 2px solid var(--cnegro);
+    max-width: 450px;
+    padding: 30px 50px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    background: linear-gradient(0deg, var(--cfondoForm1) 0%, var(--cfondoForm2) 50%);
+    transition: transform 0.3s ease-in-out;
+    border-radius: 5px;
+    border: 2px solid rgba(10, 0, 0, 0.849);
+    border-radius: 0;
+   /* box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);*/
+  }
+  
+  /*.form:hover {
+    transform: scale(1.02);
+  }*/
+  
+  /* Estilos para el título del formulario */
+  .form-titulo {
+    font-weight: bold;
+    font-size: 18px;
+    text-align: left;
+    margin: 0;
+    margin-bottom: 20px;
+    letter-spacing: 3px;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  /* Estilos para los campos de entrada del formulario */
+  .form-input {
+    margin-bottom: 30px; 
+  }
+  
+  .form-input label {
+    display: block;
+    font-size: 15px;
+    margin-bottom: 5px;
+    color: var(--ctexto);
+  }
+  
+  .form-input input {
+    width: 100%;
+    padding: 10px; /* Aumentado para mejor legibilidad y clickeabilidad */
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .form-input input:focus + label {
+    font-weight: bold;
+    color: var(--cnegro);
+  }
+  
+  /* Estilos para el checkbox de términos y condiciones */
+  .form-termsAndConditions {
+    margin-left: 15px;
+    position: relative;
+    color: var(--ctexto);
+    font-size: 13px;
+  }
+  
+  .form-termsAndConditions label::before {
+    content: "";
+    width: 8px;
+    height: 8px;
+    border: 1px solid var(--cnegro);
+    position: absolute;
+    left: -14px;
+    top: 5px; /* Alineado verticalmente */
+  }
+  
+  /* Estilos para el botón de enviar */
+  .form-boton input {
+    width: 100%;
+    padding: 12px 50px; /* Aumentado el padding para un botón más grande */
+    background-color: red;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .form-boton input:hover {
+    background-color: black;
+  }
+  
+  /* Estilos para los mensajes de error y correcto */
+  .mensajeError {
+    color: var(--error);
+    margin-top: 5px; /* Espaciado agregado */
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+  
+  .mensajeCorrecto {
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  /* Estilos para las opciones del menú */
+  .menu-options {
+    display: none;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+  }
+  
+  .menu-options li {
+    padding: 5px;
+    cursor: pointer;
+  }
+  
+  .menu-options li:hover {
+    background-color: #f0f0f0;
+  }
+  
+  /* Media query para dispositivos más pequeños */
+  @media (max-width: 768px) {
+    .form {
+      padding: 20px; /* Ajustado para mayor espaciado en dispositivos pequeños */
+    }
+  
+    .form-input {
+      margin-bottom: 15px;
+    }
+  
+    .form-titulo {
+      font-size: 24px; /* Reducido el tamaño del título */
+    }
+  
+    .form-boton input {
+      padding: 12px 30px; /* Reducido el padding del botón en dispositivos pequeños */
+    }
+  }
+  
+
+
+  /*para el pie del apagina web*/
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.footer {
+  background-color: #1C2833;
+  color: #fff;
+  padding: 20px 0;
+  font-family: Arial, sans-serif;
+}
+
+.container-footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;  /* Limitar el ancho máximo del contenedor */
+  margin: 0 auto;  /* Centrando el contenedor */
+  padding: 0 20px;  /* Padding para evitar que el contenido toque los bordes */
+}
+
+.menu-footer {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.contact-info, .information, .my-account {
+  flex: 1 1 200px;
+  margin: 10px;
+}
+
+.title-footer {
+  font-size: 1.3em;
+  margin-bottom: 10px;
+}
+
+.contact-info ul, .information ul, .my-account ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.contact-info li, .information li, .my-account li {
+  margin-bottom: 10px;
+}
+
+/* Estilo para los enlaces */
+.information a,
+.my-account a {
+    color: #ffffff; 
+    text-decoration: none; /* Eliminar subrayado */
+    transition: color 0.3s ease; 
+    font-size: 14px; 
+}
+
+/* Cambiar color al pasar el mouse */
+.information a:hover,
+.my-account a:hover {
+    color: #5aa3e8; 
+}
+
+/* Estilo para animar elementos al pasar el mouse */
+.information:hover a,
+.my-account:hover a {
+    transform: scale(1.05); 
+}
+
+/* Estilo para el texto de título */
+.title-footer {
+    font-size: 16px; 
+    font-weight: bold; /* Texto en negrita */
+    margin-bottom: 8px; 
+}
+
+/* Estilo para la lista de elementos */
+.information ul,
+.my-account ul {
+    list-style: none; /* Eliminar viñetas */
+    padding-left: 0; /* Eliminar espacio izquierdo */
+}
+
+/* Estilo para los elementos de la lista */
+.information li,
+.my-account li {
+    margin-bottom: 5px; /* Espacio inferior */
+}
+
+@media screen and (max-width: 768px) {
+  .information a,
+  .my-account a {
+      font-size: 12px; 
+  }
+
+  .title-footer {
+      font-size: 14px; 
+  }
+}
+
+/*************************************************************************************************************/
+/* Estilos base de los iconos de facebok y otras redes*/
+.social-icons {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.social-icons span {
+  border-radius: 50%;
+  width: 3rem; /* Tamaño base de los iconos */
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease, color 0.3s ease; 
+}
+
+.social-icons span i {
+  font-size: 1.2rem;
+  transition: color 0.3s ease; 
+}
+
+
+.copyright-container {
+  max-width: 1200px;  /* Limitar el ancho máximo del contenedor */
+  margin: 0 auto;  /* Centrando el contenedor */
+  padding: 0 20px;  /* Padding para evitar que el contenido toque los bordes */
+}
+
+.copyright {
+  text-align: left;
+  padding: 10px 0;
+}
+
+.copyright hr {
+  border: 0;
+  border-top: 1px solid #fff;
+  margin: 20px 0;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+  .container-footer {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .menu-footer {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .contact-info, .information, .my-account {
+      margin: 10px 0;
+      width: 100%;
+      text-align: center;
+  }
+
+  .copyright-container {
+      text-align: center;
+  }
+
+  .copyright {
+      text-align: center;
+  }
+}
+
+/* color para el icono de Facebook*/
+.facebook {
+  background-color: #3b5998;
+}
+
+.facebook:hover span {
+  background-color: #4a69ad; /* Cambia de color al pasar el mouse sobre el fondo */
+}
+
+.facebook:hover span i {
+  color: #fff; 
+  animation: spin 1s linear infinite; 
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Estilos para dispositivos móviles */
+@media only screen and (max-width: 767px) {
+  .menu-footer {
+      grid-template-columns: 1fr; 
+  }
+
+  .social-icons {
+      justify-content: center; 
+  }
+
+  .social-icons span {
+      width: 2.5rem; 
+      height: 2.5rem;
+  }
+
+  .social-icons span i {
+      font-size: 1rem; 
+  }
+}
+
+
+/* para el logo del telefono*/
+.logo img {
+  width: 111px; 
+  height: auto; 
+}

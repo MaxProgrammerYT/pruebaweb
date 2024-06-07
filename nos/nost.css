@@ -1,0 +1,428 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+/*para la barra de navegacion*/
+.navbar-custom {
+    background-color: black;
+    height: 80px;
+    box-shadow: 0 7px 8px -3px grey;
+}
+
+.navbar-custom .navbar-brand,
+.navbar-custom .nav-link {
+    color: white !important;
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar-custom .navbar-brand {
+    font-size: 1.4rem; /* Tamaño de la fuente del texto "Grafito Chama" */
+}
+
+.navbar-custom .navbar-toggler-icon {
+    filter: invert(1);
+    /* Hace que el icono del toggle sea blanco */
+}
+
+.navbar-custom .navbar-nav .nav-item {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-custom .nav-link:hover {
+    color: rgb(172, 6, 6) !important;
+}
+
+.navbar-custom .navbar-brand img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.content {
+    margin-top: 100px;
+}
+
+@media (max-width: 991.98px) {
+    .navbar-custom .navbar-collapse {
+        background-color: black;
+        width: 100vw;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        z-index: 1000;
+    }
+}
+
+/*para el video*******************************/
+.col-md-6 {
+  margin-top: 20px; 
+  box-shadow: 0 0 10px rgba(209, 208, 208, 0.849);
+}
+
+.video-container {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 56.25%; 
+  height: 0;
+  width: 100%; 
+}
+
+.video-container video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover; /*<--para el video este completo -*/
+}
+
+@media (min-width: 768px) {
+  .video-container {
+      max-width: 800px; 
+      margin-left: auto;
+      margin-right: auto;
+  }
+}
+
+/* Estilos para el contenedor del video */
+.video-container {
+  transition: transform 0.3s ease;
+}
+
+.video-container:hover {
+  transform: translateY(-10px);
+}
+
+/**************************************************************/
+
+/*nombre para el texxto inicio > la empresa*/
+.xd-link {
+    text-decoration: none;
+    color: black;
+}
+
+.xd-link:hover {
+    color: rgb(230, 31, 31); 
+}
+
+.dx-link {
+    text-decoration: none;
+    color: rgb(92, 89, 89);
+}
+
+.dx-link:hover {
+    color: rgb(92, 89, 89);
+}
+
+.xd-link, .dx-link {
+    font-size: 13px; 
+}
+
+.empresa-title {
+  font-size: 28px; 
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Estilos para el contenedor del texto */
+.text-container {
+  transition: transform 0.3s ease;
+}
+
+.text-container:hover {
+  transform: translateY(-10px);
+}
+
+/**************************************************************************/
+
+/*para el pie del apagina web*/
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .footer {
+    background-color: #1C2833;
+    color: #fff;
+    padding: 20px 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .container-footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;  /* Limitar el ancho máximo del contenedor */
+    margin: 0 auto;  /* Centrando el contenedor */
+    padding: 0 20px;  /* Padding para evitar que el contenido toque los bordes */
+  }
+  
+  .menu-footer {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  
+  .contact-info, .information, .my-account {
+    flex: 1 1 200px;
+    margin: 10px;
+  }
+  
+  .title-footer {
+    font-size: 1.3em;
+    margin-bottom: 10px;
+  }
+  
+  .contact-info ul, .information ul, .my-account ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .contact-info li, .information li, .my-account li {
+    margin-bottom: 10px;
+  }
+  
+  /* Estilo para los enlaces */
+  .information a,
+  .my-account a {
+      color: #ffffff; 
+      text-decoration: none; /* Eliminar subrayado */
+      transition: color 0.3s ease; 
+      font-size: 14px; 
+  }
+  
+  /* Cambiar color al pasar el mouse */
+  .information a:hover,
+  .my-account a:hover {
+      color: #5aa3e8; 
+  }
+  
+  /* Estilo para animar elementos al pasar el mouse */
+  .information:hover a,
+  .my-account:hover a {
+      transform: scale(1.05); 
+  }
+  
+  /* Estilo para el texto de título */
+  .title-footer {
+      font-size: 16px; 
+      font-weight: bold; /* Texto en negrita */
+      margin-bottom: 8px; 
+  }
+  
+  /* Estilo para la lista de elementos */
+  .information ul,
+  .my-account ul {
+      list-style: none; /* Eliminar viñetas */
+      padding-left: 0; /* Eliminar espacio izquierdo */
+  }
+  
+  /* Estilo para los elementos de la lista */
+  .information li,
+  .my-account li {
+      margin-bottom: 5px; /* Espacio inferior */
+  }
+  
+  @media screen and (max-width: 768px) {
+    .information a,
+    .my-account a {
+        font-size: 12px; 
+    }
+  
+    .title-footer {
+        font-size: 14px; 
+    }
+  }
+  
+  /*************************************************************************************************************/
+  /* Estilos base de los iconos de facebok y otras redes*/
+  .social-icons {
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .social-icons span {
+    border-radius: 50%;
+    width: 3rem; /* Tamaño base de los iconos */
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease, color 0.3s ease; 
+  }
+  
+  .social-icons span i {
+    font-size: 1.2rem;
+    transition: color 0.3s ease; 
+  }
+  
+
+  .copyright-container {
+    max-width: 1200px;  /* Limitar el ancho máximo del contenedor */
+    margin: 0 auto;  /* Centrando el contenedor */
+    padding: 0 20px;  /* Padding para evitar que el contenido toque los bordes */
+  }
+  
+  .copyright {
+    text-align: left;
+    padding: 10px 0;
+  }
+  
+  .copyright hr {
+    border: 0;
+    border-top: 1px solid #fff;
+    margin: 20px 0;
+  }
+  
+  /* Estilos responsivos */
+  @media (max-width: 768px) {
+    .container-footer {
+        flex-direction: column;
+        align-items: center;
+    }
+  
+    .menu-footer {
+        flex-direction: column;
+        align-items: center;
+    }
+  
+    .contact-info, .information, .my-account {
+        margin: 10px 0;
+        width: 100%;
+        text-align: center;
+    }
+  
+    .copyright-container {
+        text-align: center;
+    }
+  
+    .copyright {
+        text-align: center;
+    }
+  }
+
+  /* color para el icono de Facebook*/
+  .facebook {
+    background-color: #3b5998;
+  }
+  
+  .facebook:hover span {
+    background-color: #4a69ad; /* Cambia de color al pasar el mouse sobre el fondo */
+  }
+  
+  .facebook:hover span i {
+    color: #fff; 
+    animation: spin 1s linear infinite; 
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  /* Estilos para dispositivos móviles */
+  @media only screen and (max-width: 767px) {
+    .menu-footer {
+        grid-template-columns: 1fr; 
+    }
+  
+    .social-icons {
+        justify-content: center; 
+    }
+  
+    .social-icons span {
+        width: 2.5rem; 
+        height: 2.5rem;
+    }
+  
+    .social-icons span i {
+        font-size: 1rem; 
+    }
+  }
+  
+  /*************************************************************************************************************/
+  
+  /*******************************************************************************************************************/
+  
+/* para watsab flotante */
+  .whatsapp-float {
+    position: fixed;
+    width: 70px;
+    height: 70px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 0px 0px 15px 5px rgba(37, 211, 102, 0.7);
+    z-index: 1000;
+    animation: heartbeat 1s infinite alternate; /* Animación de latido */
+  }
+  
+  .whatsapp-float img {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+  }
+  
+  .whatsapp-float:hover {
+    background-color: #128c7e;
+    box-shadow: 0px 0px 20px 10px rgba(18, 140, 126, 0.7); /* Resplandor verde al pasar el ratón */
+  }
+  
+  @keyframes heartbeat {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(1.1);
+    }
+  }
+  /**********************************************************/
+
+/*para el mapa*/
+.map-container {
+  max-width: 90rem; 
+  margin: 0 auto; 
+  overflow: hidden; 
+  margin-bottom: 100px;
+  margin-top: 25px;
+  box-shadow: 0 0 10px rgba(133, 131, 131, 0.644);
+  transition: transform 0.5s ease-in-out;
+}
+
+.map-container:hover {
+  transform: scale(1.01); 
+}
+
+.map-title {
+  font-family: 'Tangerine', serif;
+  font-size: 2.5rem; 
+  margin-left: 17rem;
+}
+
+@media (max-width: 768px) {
+  .map-title {
+    font-size: 2.5rem; 
+    margin-left: 5rem; 
+  }
+}
+
+@media (max-width: 480px) {
+  .map-title {
+    font-size: 2rem; 
+    margin-left: 2rem; 
+  }
+}
+
+
+
+
+
+
+
+
+
